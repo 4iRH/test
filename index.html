@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mw3s | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#">mw3s</a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <canvas id="home-canvas" class="animation-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text reveal-text">
+                    <h1>Hi, I'm <span class="highlight">mw3s</span></h1>
+                    <p>Cybersecurity Specialist & Developer</p>
+                    <a href="#contact" class="cta">Get in Touch</a>
+                </div>
+                <div class="hero-image reveal-image">
+                    <div class="profile-circle">
+                        <img src="assets/profile.jpg" alt="mw3s" id="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <canvas id="about-canvas" class="animation-canvas"></canvas>
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="reveal-text">
+                        Known professionally as <span class="highlight">mw3s</span>, I am a dedicated cybersecurity specialist and developer with extensive experience in exploit development and penetration testing. My journey in technology began with a fascination for understanding systems at their core, which evolved into a passion for securing digital infrastructures.
+                    </p>
+                    <p class="reveal-text delay-1">
+                        With years of hands-on experience in the field, I've developed a comprehensive understanding of both offensive and defensive security practices. My approach combines technical expertise with strategic thinking, allowing me to identify vulnerabilities that others might miss.
+                    </p>
+                </div>
+                <div class="expertise-cards">
+                    <div class="expertise-card reveal-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Expert in multiple programming languages and frameworks, creating secure and efficient solutions.</p>
+                    </div>
+                    <div class="expertise-card reveal-card delay-1">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Specialized in identifying and mitigating security vulnerabilities across various systems and platforms.</p>
+                    </div>
+                    <div class="expertise-card reveal-card delay-2">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+                        <h3>Penetration Testing</h3>
+                        <p>Hands-on experience in ethical hacking and comprehensive security assessments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <canvas id="skills-canvas" class="animation-canvas"></canvas>
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-info">
+                        <h3>HTML/CSS</h3>
+                        <span class="skill-level">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <span class="skill-level">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-info">
+                        <h3>React</h3>
+                        <span class="skill-level">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-info">
+                        <h3>Python</h3>
+                        <span class="skill-level">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-info">
+                        <h3>Node.js</h3>
+                        <span class="skill-level">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-info">
+                        <h3>SQL</h3>
+                        <span class="skill-level">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+                
+                <!-- Security Skills -->
+                <div class="skill-card" data-category="security">
+                    <div class="skill-info">
+                        <h3>Penetration Testing</h3>
+                        <span class="skill-level">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="security">
+                    <div class="skill-info">
+                        <h3>Network Security</h3>
+                        <span class="skill-level">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="security">
+                    <div class="skill-info">
+                        <h3>Exploit Development</h3>
+                        <span class="skill-level">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <canvas id="contact-canvas" class="animation-canvas"></canvas>
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p class="section-subtitle">I'm always open to new opportunities and collaborations</p>
+            
+            <div class="social-container">
+                <div class="social-card fade-in">
+                    <div class="social-icon instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>@mw3s</p>
+                    <a href="https://instagram.com/mw3s" target="_blank" class="social-button">
+                        <span>Follow</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card fade-in delay-1">
+                    <div class="social-icon email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>mw3s@hi2.in</p>
+                    <a href="mailto:mw3s@hi2.in" class="social-button">
+                        <span>Send Email</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card fade-in delay-2">
+                    <div class="social-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>@mw3s</p>
+                    <a href="https://github.com/mw3s" target="_blank" class="social-button">
+                        <span>View Projects</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 mw3s. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
